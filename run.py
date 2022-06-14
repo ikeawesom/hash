@@ -66,5 +66,7 @@ def run():
     for i in range(n1):
         s = process(s, platform)
     return render_template('result.html', p = s)
-        
-app.run()
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=5000)
