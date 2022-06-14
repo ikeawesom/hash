@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Password Hasher </title>
+	</head>
+	<body>
+		Hashed Password: <br> <br>
+		<textarea rows='3' cols='215'>{{p}}</textarea>
+		<style>
+			textarea {
+			  resize: none;
+			  width: 100%;
+			}
+		</style>
+		<form action="{{url_for('root')}}">
+		<br>
+		<input type='submit' value='go back'>
+		</form>
+	</body>
+</html>
+	
